@@ -1,0 +1,31 @@
+node_modules/
+.venv-model/
+.venv-patchcore/
+.env
+.env.*
+!.env.example
+backend/uploads/*
+!backend/uploads/.gitkeep
+*.log
+npm-debug.log*
+coverage/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+backend/uploads-test/
+backend/model_service/models/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+# Virtual environments
+.venv/
+.venv-model/
+venv/
+# Environment secrets
+.env
+.env.*
+!.env.example
+# Node dependencies
+node_modules/

@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "dataset": {
+    "name": "VisA",
+    "license": "CC BY 4.0",
+    "source": "https://github.com/amazon-science/spot-diff"
+  },
+  "models": {}
+}

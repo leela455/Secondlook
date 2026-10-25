@@ -1,0 +1,48 @@
+{
+  "name": "secondlook-backend",
+  "version": "1.0.0",
+  "description": "SecondLook API (Express + MongoDB)",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node scripts/seed.js",
+    "test": "jest --runInBand --forceExit",
+    "test:unit": "jest --runInBand --forceExit tests/unit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.24.7",
+    "morgan": "^1.12.1",
+    "multer": "^2.5.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "mongodb-memory-server": "^11.3.0",
+    "supertest": "^7.3.1"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/tests/helpers/env.js"
+    ],
+    "testTimeout": 60000,
+    "testEnvironment": "node"
+  }
+}
